@@ -128,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         //restart the scene if the other object is a hazard
-        if(other.gameObject.tag == "Hazards")
+        if(other.gameObject.tag == "Hazards" || other.gameObject.tag == "Enemy")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     
@@ -169,5 +169,71 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Coin") 
+        {
+
+            Destroy(collision.gameObject);
+            
+        }
+    }
+
 
 }
+
+/*
+void OnCollisionEnter2D(Collision2D other)
+    {
+        //restart the scene if the other object is a hazard
+        if(other.gameObject.tag == "Hazards" || other.gameObject.tag == "Enemy")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    
+        }
+
+
+        if(other.gameObject.tag =="Coin") 
+        {
+
+            Destroy(other.gameObject);
+            
+        }
+
+        //go to next scene if the other object is a portal
+        if(other.gameObject.tag == "Portal")
+        {
+            SceneManager.LoadScene(sceneName:"LevelHub");
+    
+        }
+
+
+         if(other.gameObject.tag == "Painting1")
+        {
+            SceneManager.LoadScene(sceneName:"Scene1"); 
+    
+        }
+
+        if(other.gameObject.tag == "Painting2")
+        {
+            SceneManager.LoadScene(sceneName:"Scene2"); 
+    
+        }
+
+        if(other.gameObject.tag == "Painting3")
+        {
+            SceneManager.LoadScene(sceneName:"Scene3"); 
+    
+        }
+
+        if(other.gameObject.tag == "Painting4")
+        {
+            SceneManager.LoadScene(sceneName:"Scene4"); 
+    
+        }
+        
+        
+    }
+
+
+} */

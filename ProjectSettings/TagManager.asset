@@ -10,20 +10,22 @@ TagManager:
   - Painting4
   - Portal
   - Hazards
+  - Enemy
+  - Coin
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Platforms
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Bouncy
+  - Background
+  - Hazards
+  - Enemy
+  - PlayerSensor
+  - Coin
   - 
   - 
   - 
