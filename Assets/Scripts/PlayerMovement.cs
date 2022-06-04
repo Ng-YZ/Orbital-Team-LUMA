@@ -55,6 +55,12 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("jump", false);
         }
+
+         if (Input.GetKeyDown(KeyCode.Escape))
+         {
+            Application.Quit();
+         }
+
    
     }
 
