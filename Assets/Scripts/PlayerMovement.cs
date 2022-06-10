@@ -105,17 +105,15 @@ public class PlayerMovement : MonoBehaviour
 
     private void GetMovementInputs() 
     {
-        xAxis = Input.GetAxisRaw("Horizontal"); //number from -1 to 1 depending on whether you press left/right or A/D keys 
-        //character will slide if u dont use GetAxisRaw
+        xAxis = Input.GetAxis("Horizontal"); //number from -1 to 1 depending on whether you press left/right or A/D keys
     
     }
 
     private void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded()) 
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && IsGrounded()) 
         {
            _rb.velocity = new Vector2(_rb.velocity.x, jumpSpeed);
-           //Debug.Log("Hello!");
 
         }
 
