@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
     public float gravity;
     public float jumpHeight = 20f;
     public float jumpTime = 0.5f;
+
+
+    public Transform playerFeet;
     
 
     // Start is called before the first frame update
@@ -102,7 +105,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void GetMovementInputs() 
     {
-        xAxis = Input.GetAxis("Horizontal"); //number from -1 to 1 depending on whether you press left/right or A/D keys
+        xAxis = Input.GetAxisRaw("Horizontal"); //number from -1 to 1 depending on whether you press left/right or A/D keys 
+        //character will slide if u dont use GetAxisRaw
     
     }
 
