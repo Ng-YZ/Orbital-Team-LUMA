@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - Coin
   - Hurtbox
+  - Teleporter
   layers:
   - Default
   - TransparentFX
