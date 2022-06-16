@@ -22,6 +22,16 @@ public class PlayerInteraction : MonoBehaviour
             
             
         }
+
+        if(collision.gameObject.tag == "Hurtbox") 
+        {
+
+            Destroy(transform.parent.gameObject);
+            score += 200;
+            scoreText.text = score.ToString(); //1.18.56
+            
+            
+        }
     }
 
 
@@ -45,7 +55,7 @@ public class PlayerInteraction : MonoBehaviour
 
          if(other.gameObject.tag == "Painting1")
         {
-            SceneManager.LoadScene(sceneName:"Scene1"); 
+            SceneManager.LoadScene(sceneName:"Changi"); 
     
         }
 

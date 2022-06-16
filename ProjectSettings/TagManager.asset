@@ -12,6 +12,7 @@ TagManager:
   - Hazards
   - Enemy
   - Coin
+  - Hurtbox
   layers:
   - Default
   - TransparentFX
