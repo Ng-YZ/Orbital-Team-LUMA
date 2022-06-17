@@ -25,11 +25,9 @@ public class PlayerInteraction : MonoBehaviour
 
         if(collision.gameObject.tag == "Hurtbox") 
         {
-
-            Destroy(transform.parent.gameObject);
+            Destroy(collision.transform.parent.gameObject);
             score += 200;
             scoreText.text = score.ToString(); //1.18.56
-            
             
         }
     }
