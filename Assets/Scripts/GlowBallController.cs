@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GlowBallController : MonoBehaviour
 {
-    private bool isContact = false;
+    //private bool isContact = false;
     Animator myAnim;
     
 
@@ -26,9 +26,8 @@ public class GlowBallController : MonoBehaviour
         
         if(other.gameObject.tag == "Player") 
         {
-            isContact = true;
+            //isContact = true;
             myAnim.SetBool("isContact", true);
-            Debug.Log("after isContact was set to true");
             
         }
 
@@ -36,12 +35,10 @@ public class GlowBallController : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("OnTriggerEXIT called");
         if(other.gameObject.tag == "Player")
         {
-           isContact = false;
+           //isContact = false;
            myAnim.SetBool("isContact", false);
-           Debug.Log("after isContact was set to false");
         }
         
     }
