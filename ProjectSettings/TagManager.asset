@@ -14,6 +14,7 @@ TagManager:
   - Coin
   - Hurtbox
   - Teleporter
+  - GlowBall
   layers:
   - Default
   - TransparentFX
@@ -50,6 +51,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 115208105
+    locked: 0
+  - name: Environment
+    uniqueID: 2843089989
     locked: 0
   - name: Default
     uniqueID: 0
