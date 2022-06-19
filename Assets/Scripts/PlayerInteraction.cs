@@ -38,7 +38,7 @@ public class PlayerInteraction : MonoBehaviour
         //restart the scene if the other object is a hazard
 
 
-        
+        //enemy condition isn't needed anymore because now the player respawns at a specific point when hit by an enemy
         if(other.gameObject.tag == "Hazards" /*|| other.gameObject.tag == "Enemy"*/)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -48,8 +48,8 @@ public class PlayerInteraction : MonoBehaviour
         //go to next scene if the other object is a portal
         if(other.gameObject.tag == "Portal")
         {
-            Debug.Log("Portal here");
-            SceneManager.LoadScene(sceneName:"LevelHub");
+            //Debug.Log("Portal here");
+            SceneManager.LoadScene(sceneName:"NationalGallery");
     
         }
 
