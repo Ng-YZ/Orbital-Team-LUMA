@@ -7,11 +7,27 @@ public class Respawn : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private Transform respawnPoint;
 
-    void OnTriggerEnter2D(Collider2D other)
+    /*
+    void OnColliderEnter2D(Collider2D other)
     {
         Debug.Log("Entered function");
+        if (other.gameObject.tag == "Player")
+        {
         player.transform.position = respawnPoint.transform.position;
+        }
         Debug.Log("After transform");
     }
+    */
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Entered function");
+        if (other.gameObject.tag == "Player")
+        {
+        player.transform.position = respawnPoint.transform.position;
+        }
+        Debug.Log("After transform");
+    }
+    
 
 }

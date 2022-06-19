@@ -36,7 +36,10 @@ public class PlayerInteraction : MonoBehaviour
     void OnCollisionEnter2D(Collision2D other)
     {
         //restart the scene if the other object is a hazard
-        if(other.gameObject.tag == "Hazards" || other.gameObject.tag == "Enemy")
+
+
+        
+        if(other.gameObject.tag == "Hazards" /*|| other.gameObject.tag == "Enemy"*/)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     
