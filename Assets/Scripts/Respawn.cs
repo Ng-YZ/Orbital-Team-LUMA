@@ -21,12 +21,11 @@ public class Respawn : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("Entered function");
         if (other.gameObject.tag == "Player")
         {
         player.transform.position = respawnPoint.transform.position;
         }
-        Debug.Log("After transform");
+        
     }
     
 
