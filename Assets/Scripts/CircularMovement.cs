@@ -13,9 +13,12 @@ public class CircularMovement : MonoBehaviour
    [SerializeField]
    float angularSpeed = 2f;
 
+   [SerializeField]
+   float angle = 0f;
+
    float posX = 0f;
    float posY = 0f;
-   float angle = 0f;
+   //float angle = 0f;
 
    void Update()
    {

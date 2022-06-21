@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -68,7 +68,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -21704,8 +21704,8 @@ TextureImporter:
       Textures-16_488: 1948050657
       Textures-16_59: -1671924813
       Textures-16_88: -1133947904
-      Textures-16_541: 1123437609
       Textures-16_957: 2123887416
+      Textures-16_541: 1123437609
       Textures-16_910: -1111140028
       Textures-16_814: -1827182814
       Textures-16_185: -1845831323
@@ -21774,25 +21774,25 @@ TextureImporter:
       Textures-16_28: -184757642
       Textures-16_58: 494265399
       Textures-16_147: 881453789
-      Textures-16_119: 1644265122
       Textures-16_305: -1819822296
       Textures-16_213: 445464227
-      Textures-16_266: 1182786980
+      Textures-16_119: 1644265122
       Textures-16_548: 2030960900
       Textures-16_858: 385902672
       Textures-16_354: -95473566
       Textures-16_153: -1690719450
       Textures-16_946: 944607711
       Textures-16_796: 281133890
-      Textures-16_797: -1014242946
+      Textures-16_266: 1182786980
       Textures-16_936: 2142232854
       Textures-16_490: -1017969084
       Textures-16_667: 418693020
       Textures-16_63: -1108534760
       Textures-16_913: -203957245
-      Textures-16_901: 1691435285
+      Textures-16_797: -1014242946
       Textures-16_644: 154534526
       Textures-16_301: -1003090171
+      Textures-16_901: 1691435285
       Textures-16_82: 1747257062
       Textures-16_620: 2079532984
       Textures-16_718: -575321493
@@ -21871,6 +21871,7 @@ TextureImporter:
       Textures-16_212: -548570686
       Textures-16_684: 1270613035
       Textures-16_1015: -1086318128
+      Textures-16_813: 331024455
       Textures-16_138: 851750656
       Textures-16_262: 88032444
       Textures-16_77: -812012485
@@ -21878,17 +21879,16 @@ TextureImporter:
       Textures-16_795: -162062199
       Textures-16_268: -8940067
       Textures-16_154: 815350371
-      Textures-16_196: 294106765
       Textures-16_55: 557082060
       Textures-16_749: 1051119217
       Textures-16_326: 442441333
       Textures-16_905: -761517416
       Textures-16_491: 483376918
+      Textures-16_196: 294106765
       Textures-16_234: -1567381416
       Textures-16_226: 625186141
-      Textures-16_813: 331024455
-      Textures-16_161: 523341425
       Textures-16_1001: -1303676632
+      Textures-16_161: 523341425
       Textures-16_886: -77290871
       Textures-16_867: 189062535
       Textures-16_671: 1531661857
@@ -21898,9 +21898,9 @@ TextureImporter:
       Textures-16_663: 131717060
       Textures-16_207: 2145436917
       Textures-16_6: 1553629021
-      Textures-16_396: -917253097
       Textures-16_765: -408985581
       Textures-16_280: 14053630
+      Textures-16_396: -917253097
       Textures-16_38: 1375417730
       Textures-16_308: 1619676836
       Textures-16_289: 953588457
@@ -21946,28 +21946,28 @@ TextureImporter:
       Textures-16_227: -82138710
       Textures-16_832: 2027584265
       Textures-16_101: -730683224
-      Textures-16_72: -170062939
+      Textures-16_868: 827877249
       Textures-16_607: 1628516232
       Textures-16_106: -1916691967
+      Textures-16_72: -170062939
       Textures-16_670: -1988822105
-      Textures-16_868: 827877249
       Textures-16_842: 1158264647
       Textures-16_419: -770091182
       Textures-16_223: -346761000
       Textures-16_297: 738430315
       Textures-16_158: -1514376332
-      Textures-16_201: 472993152
       Textures-16_700: 2064662934
-      Textures-16_861: 900849327
+      Textures-16_201: 472993152
       Textures-16_239: 635257484
       Textures-16_9: 512349845
-      Textures-16_626: 471037597
+      Textures-16_861: 900849327
       Textures-16_342: 1560648943
-      Textures-16_862: -1858115688
+      Textures-16_626: 471037597
       Textures-16_804: 1432404509
       Textures-16_288: -688719314
       Textures-16_15: -209643427
       Textures-16_871: -468781651
+      Textures-16_862: -1858115688
       Textures-16_1003: -1470710553
       Textures-16_570: 860697806
       Textures-16_317: -1060233745
@@ -22196,9 +22196,9 @@ TextureImporter:
       Textures-16_979: 1248344264
       Textures-16_513: 488997713
       Textures-16_149: -184336142
+      Textures-16_974: 376045116
       Textures-16_690: -1940883128
       Textures-16_587: 399564467
-      Textures-16_974: 376045116
       Textures-16_808: 1574365246
       Textures-16_527: -601934149
       Textures-16_67: -1688843039
@@ -22207,27 +22207,27 @@ TextureImporter:
       Textures-16_711: 1134007065
       Textures-16_449: 1431493615
       Textures-16_90: -228184468
-      Textures-16_611: 493837484
       Textures-16_887: 1571210377
       Textures-16_341: -1019324935
+      Textures-16_611: 493837484
       Textures-16_624: -1365743149
       Textures-16_47: -354626188
       Textures-16_299: -714501521
       Textures-16_817: 1747584936
-      Textures-16_524: -1486487933
+      Textures-16_841: 2097026407
       Textures-16_74: -1501464383
       Textures-16_319: 1752237447
-      Textures-16_709: 2077987372
+      Textures-16_524: -1486487933
       Textures-16_244: -1754783364
       Textures-16_465: -187446048
       Textures-16_172: -180331541
+      Textures-16_709: 2077987372
       Textures-16_192: 1469411655
       Textures-16_285: -1756050998
       Textures-16_565: -39198829
       Textures-16_5: -1503503114
       Textures-16_4: 515857816
       Textures-16_915: -160360996
-      Textures-16_841: 2097026407
       Textures-16_536: -1666945750
       Textures-16_651: 1439344902
       Textures-16_57: -390233667
