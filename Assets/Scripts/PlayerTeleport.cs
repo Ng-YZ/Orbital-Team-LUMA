@@ -40,6 +40,7 @@ public class PlayerTeleport : MonoBehaviour
          if(collision.CompareTag("Teleporter"))
         {
             currentTeleporter = null;
+
         }
 
     }
