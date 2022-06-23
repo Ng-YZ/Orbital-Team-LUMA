@@ -7,13 +7,15 @@ public class FallingPlatform : MonoBehaviour
     bool isFalling = false;
     float downSpeed = 0;
 
-    // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.gameObject.tag == "Player")
         {
             isFalling = true;
-            Destroy(gameObject, 10);
+            transform.DetachChildren();
+            Debug.Log("Detached");
+            Destroy(gameObject, 1.5f);
+            Debug.Log("Destroyed");
         }
         
     }
@@ -23,7 +25,7 @@ public class FallingPlatform : MonoBehaviour
     {
         if (isFalling)
         {
-            downSpeed += Time.deltaTime/10;
+            downSpeed += Time.deltaTime/12;
             transform.position = new Vector3(transform.position.x, transform.position.y - downSpeed, transform.position.z);
         }
         

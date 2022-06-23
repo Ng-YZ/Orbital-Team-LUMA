@@ -12,7 +12,6 @@ public class StickyPlatform : MonoBehaviour
         {
         
             collision.gameObject.transform.SetParent(transform);
-            Debug.Log("Player is now child object");
         }
     }
 
@@ -22,7 +21,6 @@ public class StickyPlatform : MonoBehaviour
         {
 
             collision.gameObject.transform.SetParent(null);
-            Debug.Log("Player is NOT child object");
         }
     }
 
