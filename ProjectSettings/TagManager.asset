@@ -15,6 +15,7 @@ TagManager:
   - Hurtbox
   - Teleporter
   - GlowBall
+  - Music
   layers:
   - Default
   - TransparentFX
