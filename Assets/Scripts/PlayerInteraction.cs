@@ -30,6 +30,14 @@ public class PlayerInteraction : MonoBehaviour
             scoreText.text = score.ToString(); //1.18.56
             
         }
+
+         if(collision.gameObject.tag == "Collectible") 
+        {
+
+            Destroy(collision.gameObject);
+            
+        }
+
     }
 
 
@@ -62,7 +70,7 @@ public class PlayerInteraction : MonoBehaviour
 
         if(other.gameObject.tag == "Painting2")
         {
-            SceneManager.LoadScene(sceneName:"Scene2"); 
+            SceneManager.LoadScene(sceneName:"GBTB"); 
     
         }
 
@@ -76,6 +84,12 @@ public class PlayerInteraction : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName:"Scene4"); 
     
+        }
+
+        if(other.gameObject.tag == "CollectibleAccess")
+        {
+            SceneManager.LoadScene(sceneName:"CollectibleGallery");
+
         }
         
         

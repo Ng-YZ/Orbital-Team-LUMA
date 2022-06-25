@@ -16,6 +16,8 @@ TagManager:
   - Teleporter
   - GlowBall
   - Music
+  - Collectible
+  - CollectibleAccess
   layers:
   - Default
   - TransparentFX
