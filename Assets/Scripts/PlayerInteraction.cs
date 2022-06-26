@@ -91,6 +91,11 @@ public class PlayerInteraction : MonoBehaviour
             SceneManager.LoadScene(sceneName:"CollectibleGallery");
 
         }
+        if(other.gameObject.tag == "GalleryAccess")
+        {
+            SceneManager.LoadScene(sceneName:"NationalGallery");
+
+        }
         
         
     }

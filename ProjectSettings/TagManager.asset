@@ -18,6 +18,7 @@ TagManager:
   - Music
   - Collectible
   - CollectibleAccess
+  - GalleryAccess
   layers:
   - Default
   - TransparentFX
