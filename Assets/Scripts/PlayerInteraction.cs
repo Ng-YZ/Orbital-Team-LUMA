@@ -43,20 +43,17 @@ public class PlayerInteraction : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        //restart the scene if the other object is a hazard
 
 
-        //enemy condition isn't needed anymore because now the player respawns at a specific point when hit by an enemy
-        if(other.gameObject.tag == "Hazards" /*|| other.gameObject.tag == "Enemy"*/)
+        if(other.gameObject.tag == "Hazards")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     
         }
 
-        //go to next scene if the other object is a portal
         if(other.gameObject.tag == "Portal")
         {
-            //Debug.Log("Portal here");
+
             SceneManager.LoadScene(sceneName:"NationalGallery");
     
         }
@@ -100,17 +97,4 @@ public class PlayerInteraction : MonoBehaviour
         
     }
     
-    /*
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    */
 }

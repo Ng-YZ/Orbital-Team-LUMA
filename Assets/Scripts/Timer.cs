@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
 
 
     [Header("Timer Settings")]
-    public float currentTime; //need to initialise?
+    public float currentTime;
     public bool countDown; //if countDown is false, then the count is increasing
 
     [Header("Limit Settings")]
@@ -43,7 +43,7 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentTime = countDown ? currentTime - Time.deltaTime : currentTime + Time.deltaTime; //not sure if this shld be -=/+= or -/+
+        currentTime = countDown ? currentTime - Time.deltaTime : currentTime + Time.deltaTime;
 
         
         //sets limit for timer when "Has Limit box is checked in TimerManager

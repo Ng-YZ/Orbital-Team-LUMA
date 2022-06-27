@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; //for scene managmement at run-time
+using UnityEngine.SceneManagement; 
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -33,16 +33,15 @@ public class PlayerMovement : MonoBehaviour
         
         
     /*remove if things go south */
+        gravity = (float) -20;
+        Physics2D.gravity = new Vector2(0, gravity); 
         //gravity = (-2 * jumpHeight) / Mathf.Pow(jumpTime, 2);
-        gravity = (float) -20; //this works but the above line doesn't
-        Physics2D.gravity = new Vector2(0, gravity); //Vector2 refers to the representation of 2D vectors and points
         //jumpSpeed = -gravity * jumpTime;
 
     
     }
 
     // Update is called once per frame
-    // Way to register player input
     private void Update()
     {
         GetMovementInputs();
@@ -74,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
         _rb.velocity = new Vector2(xAxis * walkSpeed, _rb.velocity.y); //setting rigid body's velocity
 
         //this is for animation
-        animator.SetFloat("walkingSpeed", Mathf.Abs(xAxis)); //we modulus xAxis to prevent negative values from triggering this
+        animator.SetFloat("walkingSpeed", Mathf.Abs(xAxis)); //modulus xAxis to prevent negative values from triggering this
                                                             //because the condition in Unity only says "walkingSpeed less than 0.01"
 
         if (xAxis > 0 && facingRight)
@@ -123,7 +122,7 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded()
     {
         Bounds bounds = _collider.bounds; //Bounds represents an axis aligned bounding box (box aligned with coordinate axes, fully enclosing some object)
-        RaycastHit2D hitLeft = Physics2D.Raycast(new Vector2(bounds.min.x, bounds.min.y), Vector2.down, 0.1f, platformMask); //method overloading?
+        RaycastHit2D hitLeft = Physics2D.Raycast(new Vector2(bounds.min.x, bounds.min.y), Vector2.down, 0.1f, platformMask); 
         //0.1f refers to the length of the ray
 
         RaycastHit2D hitRight = Physics2D.Raycast(new Vector2(bounds.max.x, bounds.min.y), Vector2.down, 0.1f, platformMask); 
