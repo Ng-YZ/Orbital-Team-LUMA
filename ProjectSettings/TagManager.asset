@@ -59,6 +59,9 @@ TagManager:
   - name: Environment
     uniqueID: 2843089989
     locked: 0
+  - name: Teleporters
+    uniqueID: 1972165665
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
