@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GlowBallController : MonoBehaviour
 {
-    //private bool isContact = false;
     Animator myAnim;
     
 
@@ -26,7 +25,7 @@ public class GlowBallController : MonoBehaviour
         
         if(other.gameObject.tag == "Player") 
         {
-            //isContact = true;
+
             myAnim.SetBool("isContact", true);
             
         }
@@ -37,7 +36,6 @@ public class GlowBallController : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-           //isContact = false;
            myAnim.SetBool("isContact", false);
         }
         
