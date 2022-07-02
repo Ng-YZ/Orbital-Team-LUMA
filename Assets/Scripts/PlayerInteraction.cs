@@ -51,13 +51,6 @@ public class PlayerInteraction : MonoBehaviour
     
         }
 
-        if(other.gameObject.tag == "Portal")
-        {
-
-            SceneManager.LoadScene(sceneName:"NationalGallery");
-    
-        }
-
 
          if(other.gameObject.tag == "Painting1")
         {

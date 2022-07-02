@@ -17,8 +17,15 @@ public class SceneTransitions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("Entered");
+        if(other.gameObject.tag == "Player")
         {
+
             StartCoroutine(LoadScene());
         }
     }
@@ -29,4 +36,6 @@ public class SceneTransitions : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         SceneManager.LoadScene(sceneName);
     }
+
+    
 }
