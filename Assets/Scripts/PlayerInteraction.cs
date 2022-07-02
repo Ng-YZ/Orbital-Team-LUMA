@@ -50,27 +50,6 @@ public class PlayerInteraction : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     
         }
-
-        /*if(other.gameObject.tag == "Painting2")
-        {
-            SceneManager.LoadScene(sceneName:"GBTB"); 
-    
-        }
-        */
-
-        if(other.gameObject.tag == "Painting3")
-        {
-            SceneManager.LoadScene(sceneName:"Scene3"); 
-    
-        }
-
-        if(other.gameObject.tag == "Painting4")
-        {
-            SceneManager.LoadScene(sceneName:"Scene4"); 
-    
-        }
-
-        
         
     }
     
