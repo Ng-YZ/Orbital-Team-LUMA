@@ -51,18 +51,12 @@ public class PlayerInteraction : MonoBehaviour
     
         }
 
-
-         if(other.gameObject.tag == "Painting1")
-        {
-            SceneManager.LoadScene(sceneName:"Changi"); 
-    
-        }
-
-        if(other.gameObject.tag == "Painting2")
+        /*if(other.gameObject.tag == "Painting2")
         {
             SceneManager.LoadScene(sceneName:"GBTB"); 
     
         }
+        */
 
         if(other.gameObject.tag == "Painting3")
         {
@@ -76,16 +70,6 @@ public class PlayerInteraction : MonoBehaviour
     
         }
 
-        if(other.gameObject.tag == "CollectibleAccess")
-        {
-            SceneManager.LoadScene(sceneName:"CollectibleGallery");
-
-        }
-        if(other.gameObject.tag == "GalleryAccess")
-        {
-            SceneManager.LoadScene(sceneName:"NationalGallery");
-
-        }
         
         
     }

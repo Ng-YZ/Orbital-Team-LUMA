@@ -55504,6 +55504,7 @@ GameObject:
   - component: {fileID: 861327078}
   - component: {fileID: 861327077}
   - component: {fileID: 861327079}
+  - component: {fileID: 861327080}
   m_Layer: 0
   m_Name: Painting2
   m_TagString: Painting2
@@ -55604,6 +55605,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3138964, y: 0.8273081}
   m_EdgeRadius: 0
+--- !u!114 &861327080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861327076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3683f065acd217747a5bbe8cbf3523c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 1685050272}
+  sceneName: GBTB
 --- !u!1 &885220212
 GameObject:
   m_ObjectHideFlags: 0
@@ -57959,6 +57974,7 @@ GameObject:
   - component: {fileID: 1950770351}
   - component: {fileID: 1950770350}
   - component: {fileID: 1950770349}
+  - component: {fileID: 1950770352}
   m_Layer: 0
   m_Name: Painting1
   m_TagString: Painting1
@@ -58059,6 +58075,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950770352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950770348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3683f065acd217747a5bbe8cbf3523c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionAnim: {fileID: 1685050272}
+  sceneName: Changi
 --- !u!1 &2035345416
 GameObject:
   m_ObjectHideFlags: 0
