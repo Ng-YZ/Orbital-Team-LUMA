@@ -10,5 +10,10 @@ public class OptionsMenuController : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName:"Main Menu");
     }
+
+    public void ReturnPause() 
+    {
+        SceneManager.LoadScene(sceneName:"Main Menu");
+    }
     
 }

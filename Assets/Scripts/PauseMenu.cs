@@ -25,12 +25,14 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GamePaused = false;
+        MusicPlayerScript.objectMusic.GetComponent<AudioSource>().Play();
     }
 
     void Pause() {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GamePaused = true;
+        MusicPlayerScript.objectMusic.GetComponent<AudioSource>().Pause();
     }
 
     public void LoadMenu() {
