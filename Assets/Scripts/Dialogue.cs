@@ -71,25 +71,38 @@ public class Dialogue : MonoBehaviour
 
     //end dialogue
     public void EndDialogue() {
+        //new linea added here
+        started = false;
+        waitForNext = false;
+        StopAllCoroutines();
+        //new lines end here
+        
         //hide window  
         ToggleWindow(false);
     }
 
     //writing logic
     IEnumerator Writing() {
+        
+        yield return new WaitForSeconds(writingSpeed); //new line added
+
         string currentDialogue = dialogues[index];
         //write the character
         dialogueText.text += currentDialogue[charIndex];
         //increase char index
         charIndex++;
         //check if end of sentence
-        if(charIndex < currentDialogue.Length) {
+        if(charIndex < currentDialogue.Length) 
+        {
             //start from index 0
             //wait x seconds
             yield return new WaitForSeconds(writingSpeed);
             //restart process
             StartCoroutine(Writing());
-        } else {
+        } 
+        
+        else 
+        {
             //end sentence.
             waitForNext = true;
         }
@@ -101,13 +114,14 @@ public class Dialogue : MonoBehaviour
             return;
         }
 
-        if (waitForNext && Input.GetKeyDown(KeyCode.C)) {
+        if (waitForNext && Input.GetKeyDown(KeyCode.E)) {
             waitForNext = false;    
             index++;
 
             if(index < dialogues.Count) {
                 GetDialogue(index);
             } else {
+                ToggleIndicator(true); //new line added
                 EndDialogue();
             }
         }
