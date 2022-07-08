@@ -96,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void GetMovementInputs() 
     {
-        xAxis = Input.GetAxis("Horizontal"); //number from -1 to 1 depending on whether you press left/right or A/D keys
+        xAxis = Input.GetAxisRaw("Horizontal"); //number from -1 to 1 depending on whether you press left/right or A/D keys
     
     }
 
