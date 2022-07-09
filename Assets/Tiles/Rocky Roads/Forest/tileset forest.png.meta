@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -68,8 +68,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureFormat: 4
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -759,7 +759,7 @@ TextureImporter:
       tileset forest_11: 1771983736
       tileset forest_3: -1807580035
       tileset forest_25: 1452177829
-      tileset forest_14: 633795263
+      tileset forest_7: 817740527
       tileset forest_4: -1292324782
       tileset forest_9: -513057463
       tileset forest_6: -699215874
@@ -785,7 +785,7 @@ TextureImporter:
       tileset forest_29: 1390908366
       tileset forest_0: -174599138
       tileset forest_5: -1451817408
-      tileset forest_7: 817740527
+      tileset forest_14: 633795263
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
