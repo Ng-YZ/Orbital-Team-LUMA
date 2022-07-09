@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -68,7 +68,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -3957,8 +3957,8 @@ TextureImporter:
       tiles_packed_109: -1328106456
       tiles_packed_72: 398254914
       tiles_packed_126: 1320004063
-      tiles_packed_115: 640020877
       tiles_packed_25: 1335297621
+      tiles_packed_115: 640020877
       tiles_packed_42: 334790387
       tiles_packed_168: 1455023314
       tiles_packed_97: -1764940700
