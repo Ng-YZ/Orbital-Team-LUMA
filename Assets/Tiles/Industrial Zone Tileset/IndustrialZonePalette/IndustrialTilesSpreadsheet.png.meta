@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -68,7 +68,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -1828,8 +1828,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       IndustrialTilesSpreadsheet_8: 837104384
-      IndustrialTilesSpreadsheet_80: 1912070787
-      IndustrialTilesSpreadsheet_79: 131189081
+      IndustrialTilesSpreadsheet_61: -1320344723
       IndustrialTilesSpreadsheet_73: -508335916
       IndustrialTilesSpreadsheet_46: -654409686
       IndustrialTilesSpreadsheet_14: 1427850878
@@ -1862,12 +1861,12 @@ TextureImporter:
       IndustrialTilesSpreadsheet_42: 298906950
       IndustrialTilesSpreadsheet_11: 1834924884
       IndustrialTilesSpreadsheet_56: 854124526
-      IndustrialTilesSpreadsheet_30: -234796406
+      IndustrialTilesSpreadsheet_48: -1572236173
       IndustrialTilesSpreadsheet_38: 1513267750
       IndustrialTilesSpreadsheet_5: 616512136
+      IndustrialTilesSpreadsheet_30: -234796406
       IndustrialTilesSpreadsheet_39: 507780463
       IndustrialTilesSpreadsheet_0: 358006351
-      IndustrialTilesSpreadsheet_48: -1572236173
       IndustrialTilesSpreadsheet_71: 161584933
       IndustrialTilesSpreadsheet_52: 257116321
       IndustrialTilesSpreadsheet_49: 801576136
@@ -1895,18 +1894,19 @@ TextureImporter:
       IndustrialTilesSpreadsheet_75: 1530498534
       IndustrialTilesSpreadsheet_3: -404817518
       IndustrialTilesSpreadsheet_25: 744743279
+      IndustrialTilesSpreadsheet_80: 1912070787
       IndustrialTilesSpreadsheet_13: 2067828212
-      IndustrialTilesSpreadsheet_35: 1556815633
-      IndustrialTilesSpreadsheet_47: 2107967060
       IndustrialTilesSpreadsheet_65: 1701448609
+      IndustrialTilesSpreadsheet_79: 131189081
       IndustrialTilesSpreadsheet_72: -1678728325
-      IndustrialTilesSpreadsheet_40: 82426719
       IndustrialTilesSpreadsheet_18: 476354235
+      IndustrialTilesSpreadsheet_35: 1556815633
       IndustrialTilesSpreadsheet_26: 648643720
       IndustrialTilesSpreadsheet_36: 1802983046
-      IndustrialTilesSpreadsheet_61: -1320344723
-      IndustrialTilesSpreadsheet_31: 1843258949
       IndustrialTilesSpreadsheet_62: -1742228731
+      IndustrialTilesSpreadsheet_31: 1843258949
+      IndustrialTilesSpreadsheet_40: 82426719
+      IndustrialTilesSpreadsheet_47: 2107967060
       IndustrialTilesSpreadsheet_76: 162735056
   spritePackingTag: 
   pSDRemoveMatte: 0
