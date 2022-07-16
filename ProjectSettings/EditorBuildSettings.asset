@@ -27,10 +27,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Options.unity
     guid: 540e809f2236be742abd6259cf4c142c
   - enabled: 1
-    path: Assets/Scenes/Sentosa.unity
+    path: Assets/Scenes/Heritage.unity
     guid: 887867d302d8fef469fe471338696bff
   - enabled: 1
-    path: Assets/Scenes/Heritage.unity
+    path: Assets/Scenes/Sentosa.unity
+    guid: 652186daeebf21c4083dff7effab88e1
+  - enabled: 0
+    path: Assets/Scenes/Heritage_Old.unity
     guid: 767d4a600b5259740b6c898889206e62
   - enabled: 0
     path: Assets/Scenes/Scene1.unity
