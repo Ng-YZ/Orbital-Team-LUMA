@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
@@ -23,8 +24,8 @@ public class Timer : MonoBehaviour
     public TimerFormats format;
     private Dictionary<TimerFormats, string> timeFormats = new Dictionary<TimerFormats, string>();
 
-
-
+    bool timerActive = false;
+    float x;
 
 
 
@@ -37,14 +38,17 @@ public class Timer : MonoBehaviour
         timeFormats.Add(TimerFormats.Whole, "0");
         timeFormats.Add(TimerFormats.TenthDecimal, "0.0");
         timeFormats.Add(TimerFormats.HundrethsDecimal, "0.00");
-        
+        timerActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        currentTime = countDown ? currentTime - Time.deltaTime : currentTime + Time.deltaTime;
-
+        if (timerActive) {
+            currentTime = countDown ? currentTime - Time.deltaTime : currentTime + Time.deltaTime;
+        } else if (!timerActive) {
+            currentTime -= Time.deltaTime;
+        }
         
         //sets limit for timer when "Has Limit box is checked in TimerManager
         if(hasLimit && ((countDown && currentTime <= timerLimit) || (!countDown && currentTime >= timerLimit)))
@@ -56,13 +60,18 @@ public class Timer : MonoBehaviour
         }
         
         SetTimerText();
-
-        
     }
 
     private void SetTimerText()
     {
         timerText.text = hasFormat ? currentTime.ToString(timeFormats[format]) : currentTime.ToString();
+    }
+
+    public static void StopTimer() {
+        Timer newObj = new Timer();
+        newObj.timerActive = false;
+        // if this current time > previous saved timings, then setFloat again
+        PlayerPrefs.SetFloat("Record", Time.time);
     }
 }
 
