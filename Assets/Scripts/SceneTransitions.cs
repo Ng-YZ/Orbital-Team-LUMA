@@ -25,8 +25,12 @@ public class SceneTransitions : MonoBehaviour
         Debug.Log("Entered");
         if(other.gameObject.tag == "Player")
         {
-
+            Time.timeScale = 0f;
+            Timer.StopTimer();
+            Debug.Log("Record : " + PlayerPrefs.GetFloat("Record"));
+            Time.timeScale = 1f;
             StartCoroutine(LoadScene());
+            
         }
     }
 
