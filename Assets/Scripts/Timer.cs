@@ -25,10 +25,6 @@ public class Timer : MonoBehaviour
     private Dictionary<TimerFormats, string> timeFormats = new Dictionary<TimerFormats, string>();
 
     bool timerActive = false;
-    float x;
-
-
-
 
 
     // Start is called before the first frame update

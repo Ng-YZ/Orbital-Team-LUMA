@@ -27,7 +27,7 @@ public class SceneTransitions : MonoBehaviour
         {
             Time.timeScale = 0f;
             Timer.StopTimer();
-            //Debug.Log("Record : " + PlayerPrefs.GetFloat("Record"));
+            Debug.Log("Record : " + PlayerPrefs.GetFloat("Record"));
             Time.timeScale = 1f;
             StartCoroutine(LoadScene());
             
