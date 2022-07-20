@@ -8,7 +8,7 @@ using TMPro;
 
 public class PlayerInteraction : MonoBehaviour
 {
-    private int score = 0;
+    public int score = 0;
     public TextMeshProUGUI scoreText;
     
     void OnTriggerEnter2D(Collider2D collision)
