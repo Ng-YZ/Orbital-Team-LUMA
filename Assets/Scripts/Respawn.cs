@@ -25,12 +25,9 @@ public class Respawn : MonoBehaviour
             {
                 playerInteract.score -= 400;
             }
-        
        
        
-       
-       
-        Debug.Log(playerInteract.score);
+        //Debug.Log(playerInteract.score);
 
         playerInteract.scoreText.text = playerInteract.score.ToString();
 
