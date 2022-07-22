@@ -6,11 +6,14 @@ public class ButtonTrigger : MonoBehaviour
 
 {
     
-    
+
     Animator ButtonPress;
     //private int BlockIndex = 0;
 
     [SerializeField] private GameObject[] Blocks;
+    [SerializeField] private GameObject Sign;
+    [SerializeField] private GameObject Interactable;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +41,9 @@ public class ButtonTrigger : MonoBehaviour
             {
                 block.SetActive(false);
             }
+
+            Sign.SetActive(false);
+            Interactable.SetActive(false);
             
         }
     }
