@@ -7,7 +7,7 @@ using TMPro;
 
 public class CollectibleSystem : MonoBehaviour
 {
-    // new 20/7
+    //added 20/7
     private GameObject book, leaf, gem, potion;
 
     void Start() {
@@ -66,7 +66,27 @@ public class CollectibleSystem : MonoBehaviour
                 Debug.Log("No game object potion found");
             }
         }
+
+        //new 22/7
+        if (scene.name == "CollectibleGallery") {
+            if (PlayerPrefs.GetInt("L1Collect") == 1) {
+                GameObject.Find("Collectible_L1 (1)").SetActive(false);
+            }
+
+            if (PlayerPrefs.GetInt("L2Collect") == 1) {
+                GameObject.Find("Collectible_L2 (1)").SetActive(false);
+            }
+
+            if (PlayerPrefs.GetInt("L3Collect") == 1) {
+                GameObject.Find("Collectible_L3 (1)").SetActive(false);
+            }
+
+            if (PlayerPrefs.GetInt("L4Collect") == 1) {
+                GameObject.Find("Collectible_L4 (1)").SetActive(false);
+            }
+        }
     }
 
+    
     
 }
