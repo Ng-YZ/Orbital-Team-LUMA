@@ -7,6 +7,7 @@ public class SceneTransitions : MonoBehaviour
 {
     public Animator transitionAnim;
     public string sceneName;
+    private Scene scene;
     
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,6 @@ public class SceneTransitions : MonoBehaviour
             Debug.Log("Record : " + PlayerPrefs.GetFloat("Record"));
             Time.timeScale = 1f;
             StartCoroutine(LoadScene());
-            
         }
     }
 
