@@ -53177,7 +53177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4854911132165297620, guid: c06fa84a71b9f0448a3cf3d0a6b224e3, type: 3}
       propertyPath: dialogues.Array.data[0]
-      value: Head upstairs for more levels!
+      value: Head upstairs for more levels! Jump to enter doors.
       objectReference: {fileID: 0}
     - target: {fileID: 4854911132165297620, guid: c06fa84a71b9f0448a3cf3d0a6b224e3, type: 3}
       propertyPath: dialogues.Array.data[1]
