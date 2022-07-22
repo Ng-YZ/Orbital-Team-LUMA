@@ -70,18 +70,22 @@ public class CollectibleSystem : MonoBehaviour
         //new 22/7
         if (scene.name == "CollectibleGallery") {
             if (PlayerPrefs.GetInt("L1Collect") == 1) {
+                Debug.Log("Collected book");
                 GameObject.Find("Collectible_L1 (1)").SetActive(false);
             }
 
             if (PlayerPrefs.GetInt("L2Collect") == 1) {
+                Debug.Log("Collected leaf");
                 GameObject.Find("Collectible_L2 (1)").SetActive(false);
             }
 
             if (PlayerPrefs.GetInt("L3Collect") == 1) {
+                Debug.Log("Collected gem");
                 GameObject.Find("Collectible_L3 (1)").SetActive(false);
             }
 
             if (PlayerPrefs.GetInt("L4Collect") == 1) {
+                Debug.Log("Collected potion");
                 GameObject.Find("Collectible_L4 (1)").SetActive(false);
             }
         }
