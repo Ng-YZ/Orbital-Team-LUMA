@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MusicPlayerScript : MonoBehaviour
 {
-    public static GameObject objectMusic;
+    public GameObject objectMusic;
     private AudioSource AudioSource;
 
     public Slider volumeSlider;

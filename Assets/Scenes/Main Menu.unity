@@ -960,6 +960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e008cc6b656d94a98148f2d36e5de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectMusic: {fileID: 1017301710}
   volumeSlider: {fileID: 2088046149}
 --- !u!4 &108326111
 Transform:
@@ -2862,8 +2863,8 @@ RectTransform:
   m_Father: {fileID: 1346027785}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.28106457, y: 1}
+  m_AnchorMin: {x: -0.000000029802322, y: 0}
+  m_AnchorMax: {x: 0.3422767, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5012,7 +5013,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -138}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1207225199
@@ -9099,7 +9100,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 630798006}
   m_Direction: 1
   m_Value: 1
-  m_Size: 0.28106457
+  m_Size: 0.34227672
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
