@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class Timer : MonoBehaviour
 
     bool timerActive = false;
 
+    private Scene scene;
+
 
     // Start is called before the first frame update
     //Adds dropdown to choose between 0dp, 1dp and 2dp
@@ -35,17 +38,17 @@ public class Timer : MonoBehaviour
         timeFormats.Add(TimerFormats.TenthDecimal, "0.0");
         timeFormats.Add(TimerFormats.HundrethsDecimal, "0.00");
         timerActive = true;
+        scene = SceneManager.GetActiveScene();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (timerActive) {
-            currentTime = countDown ? currentTime - Time.deltaTime : currentTime + Time.deltaTime;
-        } else if (!timerActive) {
-            currentTime -= Time.deltaTime;
-        }
-        
+            //currentTime = countDown ? currentTime - Time.deltaTime : currentTime + Time.deltaTime;
+            currentTime = Time.timeSinceLevelLoad;
+        } 
+
         //sets limit for timer when "Has Limit box is checked in TimerManager
         if(hasLimit && ((countDown && currentTime <= timerLimit) || (!countDown && currentTime >= timerLimit)))
         {
@@ -66,8 +69,20 @@ public class Timer : MonoBehaviour
     public static void StopTimer() {
         Timer newObj = new Timer();
         newObj.timerActive = false;
-        // if this current time > previous saved timings, then setFloat again
-        PlayerPrefs.SetFloat("Record", Time.time);
+        //check for scene name (using empty game object) + if this current time < previous saved timings, then update value
+        if (GameObject.Find("ChangiName") == true && (Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L1"))) 
+        {
+            PlayerPrefs.SetFloat("Timing L1", Time.timeSinceLevelLoad);    
+        } else if (GameObject.Find("GBTBName") == true && (Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L2"))) 
+        {
+            PlayerPrefs.SetFloat("Timing L2", Time.timeSinceLevelLoad);
+        } else if (GameObject.Find("SentosaName") == true && (Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L3"))) 
+        {
+            PlayerPrefs.SetFloat("Timing L3", Time.timeSinceLevelLoad);
+        } else if (GameObject.Find("HeritageName") == true && (Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L4"))) 
+        {
+            PlayerPrefs.SetFloat("Timing L4", Time.timeSinceLevelLoad);
+        }
     }
 }
 
