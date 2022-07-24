@@ -7,10 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-
     [Header("Component")]
     public TextMeshProUGUI timerText;
-
 
     [Header("Timer Settings")]
     public float currentTime;
@@ -29,8 +27,6 @@ public class Timer : MonoBehaviour
 
     private Scene scene;
 
-
-    // Start is called before the first frame update
     //Adds dropdown to choose between 0dp, 1dp and 2dp
     void Start()
     {
@@ -41,11 +37,10 @@ public class Timer : MonoBehaviour
         scene = SceneManager.GetActiveScene();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (timerActive) {
-            //currentTime = countDown ? currentTime - Time.deltaTime : currentTime + Time.deltaTime;
+            //currentTime takes time counted since the scene was loaded;
             currentTime = Time.timeSinceLevelLoad;
         } 
 

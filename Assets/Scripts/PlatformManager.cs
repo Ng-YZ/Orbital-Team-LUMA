@@ -17,6 +17,7 @@ public class PlatformManager : MonoBehaviour
 			Destroy (gameObject);
 		
 	}
+	
 	// Use this for initialization
 	void Start () {
 		Instantiate (platformPrefab, new Vector2 (-3.5f, -2.5f), platformPrefab.transform.rotation);

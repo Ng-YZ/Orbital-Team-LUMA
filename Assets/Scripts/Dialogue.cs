@@ -3,17 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-//https://www.youtube.com/watch?v=JfyWgJBShak 31:48
+//referenced from: https://www.youtube.com/watch?v=JfyWgJBShak
 public class Dialogue : MonoBehaviour
 {
-    //fields
-    //window
     public GameObject window;
-    //indicator
     public GameObject indicator;
-    //text component
+
     public TMP_Text dialogueText;
-    //writing speed
+
     public float writingSpeed;
     //dialogues list
     public List<string> dialogues;
@@ -21,9 +18,8 @@ public class Dialogue : MonoBehaviour
     private int index;
     //character index
     private int charIndex;
-    //start boolean
+
     private bool started;
-    //wait for next
     private bool waitForNext;
 
     private void Awake() 
@@ -42,9 +38,10 @@ public class Dialogue : MonoBehaviour
         indicator.SetActive(show);
     }
 
-    //start dialogue
-    public void StartDialogue() {
-        if(started) {
+    public void StartDialogue() 
+    {
+        if(started) 
+        {
             return;
         }
 
@@ -60,7 +57,7 @@ public class Dialogue : MonoBehaviour
 
     private void GetDialogue(int i)
     {
-        //start index at 0
+        //start index always at 0
         index = i;
         //reset char index
         charIndex = 0;
@@ -69,27 +66,25 @@ public class Dialogue : MonoBehaviour
         StartCoroutine(Writing());
     }
 
-    //end dialogue
-    public void EndDialogue() {
-        //new linea added here
+    public void EndDialogue() 
+    {
         started = false;
         waitForNext = false;
         StopAllCoroutines();
-        //new lines end here
         
         //hide window  
         ToggleWindow(false);
     }
 
     //writing logic
-    IEnumerator Writing() {
-        
+    IEnumerator Writing() 
+    {    
         yield return new WaitForSeconds(writingSpeed); //new line added
 
         string currentDialogue = dialogues[index];
         //write the character
         dialogueText.text += currentDialogue[charIndex];
-        //increase char index
+        //increase character index
         charIndex++;
         //check if end of sentence
         if(charIndex < currentDialogue.Length) 
@@ -99,10 +94,7 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(writingSpeed);
             //restart process
             StartCoroutine(Writing());
-        } 
-        
-        else 
-        {
+        } else {
             //end sentence.
             waitForNext = true;
         }
@@ -110,18 +102,20 @@ public class Dialogue : MonoBehaviour
     }
 
     private void Update() {
-        if (!started) {
+        if (!started) 
+        {
             return;
         }
 
-        if (waitForNext && Input.GetKeyDown(KeyCode.E)) {
+        if (waitForNext && Input.GetKeyDown(KeyCode.E)) 
+        {
             waitForNext = false;    
             index++;
 
             if(index < dialogues.Count) {
                 GetDialogue(index);
             } else {
-                ToggleIndicator(true); //new line added
+                ToggleIndicator(true);
                 EndDialogue();
             }
         }

@@ -6,13 +6,6 @@ public class PlayerTeleport : MonoBehaviour
 {
     private GameObject currentTeleporter;
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W))
@@ -27,21 +20,17 @@ public class PlayerTeleport : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if(collision.CompareTag("Teleporter"))
         {
             currentTeleporter = collision.gameObject;
         }
-        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-         if(collision.CompareTag("Teleporter"))
+        if(collision.CompareTag("Teleporter"))
         {
             currentTeleporter = null;
-
         }
-
     }
 }
