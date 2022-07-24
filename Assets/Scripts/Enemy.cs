@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    
-    //public variables
     public float moveSpeed = 2f;
     public float attackSpeed = 4f;
     public float returnToNormal = 3f;
@@ -17,14 +15,12 @@ public class Enemy : MonoBehaviour
     float timeElapsed = -1f;
     float dir = 1f;
     
-    // Start is called before the first frame update
     void Start()
     {
         myRigid = GetComponent<Rigidbody2D>();
         myAnim = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(timeElapsed >= 0)
@@ -38,14 +34,10 @@ public class Enemy : MonoBehaviour
             }
         }
 
-
         if(isAttack)
         {
             myRigid.velocity = new Vector2(attackSpeed * dir, myRigid.velocity.y);
-        }
-        
-        else
-        {
+        } else {
             myRigid.velocity = new Vector2(moveSpeed * dir, myRigid.velocity.y); //x is the moveSpeed, y is the myRigid.velocity.y (those are the initial x-velocity and y-velocity)
         }
     
@@ -75,10 +67,7 @@ public class Enemy : MonoBehaviour
             if(FindObjectOfType<PlayerMovement>().gameObject.transform.position.x > transform.position.x)
             {
                 dir = 1;
-            }
-
-            else
-            {
+            } else {
                 dir = -1;
             }
 

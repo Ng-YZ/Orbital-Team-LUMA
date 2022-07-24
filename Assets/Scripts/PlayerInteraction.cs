@@ -8,14 +8,13 @@ using TMPro;
 public class PlayerInteraction : MonoBehaviour
 {
     public int score = 0;
-    public int highscore = 0; //new 24/07
+    public int highscore = 0; 
     private Scene scene;
 
     public TextMeshProUGUI scoreText;
 
     void Start() 
     {
-        //new 24/07
         scene = SceneManager.GetActiveScene();
 
         if (scene.name == "Changi") {
@@ -33,12 +32,9 @@ public class PlayerInteraction : MonoBehaviour
     {
         if(collision.gameObject.tag == "Coin") 
         {
-
             Destroy(collision.gameObject);
             score += 100;
             scoreText.text = score.ToString(); //1.18.56
-            
-            
         }
 
         if(collision.gameObject.tag == "Hurtbox") 
@@ -46,7 +42,6 @@ public class PlayerInteraction : MonoBehaviour
             Destroy(collision.transform.parent.gameObject);
             score += 200;
             scoreText.text = score.ToString(); //1.18.56
-            
         }
 
         if (collision.gameObject.name == "Collectible_Changi") {

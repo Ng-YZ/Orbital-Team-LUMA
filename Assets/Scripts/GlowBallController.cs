@@ -6,30 +6,20 @@ public class GlowBallController : MonoBehaviour
 {
     Animator myAnim;
     
-
-    // Start is called before the first frame update
     void Start()
     {
         myAnim = GetComponent<Animator>();
         myAnim.SetBool("isContact", false);
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-     void OnTriggerEnter2D(Collider2D other)
-    {
-        
         if(other.gameObject.tag == "Player") 
         {
 
             myAnim.SetBool("isContact", true);
             
         }
-
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -38,6 +28,5 @@ public class GlowBallController : MonoBehaviour
         {
            myAnim.SetBool("isContact", false);
         }
-        
     }
 }

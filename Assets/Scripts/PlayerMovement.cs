@@ -19,8 +19,6 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight = 20f;
     public float jumpTime = 0.5f;
     
-
-    // Start is called before the first frame update
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>(); //returns the component of type Rigidbody2D 
@@ -34,11 +32,8 @@ public class PlayerMovement : MonoBehaviour
         Physics2D.gravity = new Vector2(0, gravity); 
         //gravity = (-2 * jumpHeight) / Mathf.Pow(jumpTime, 2);
         //jumpSpeed = -gravity * jumpTime;
-
-    
     }
 
-    // Update is called once per frame
     private void Update()
     {
         GetMovementInputs();
@@ -54,8 +49,6 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("jump", false);
         }
-
-   
     }
 
     
@@ -77,7 +70,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
-
     }
 
     //controls the scale of the sprite and flips it accordingly
@@ -87,17 +79,11 @@ public class PlayerMovement : MonoBehaviour
         Vector3 tempScale = transform.localScale; //saves the scale of the sprite, if not once you start to move your character will go back to its tiny original 1x1 size
         tempScale.x *= -1; //flips the sprite instead of the actual character
         transform.localScale = tempScale;
-
     }
-
-
-
-
 
     private void GetMovementInputs() 
     {
         xAxis = Input.GetAxisRaw("Horizontal"); //number from -1 to 1 depending on whether you press left/right or A/D keys
-    
     }
 
     private void Jump()
@@ -105,11 +91,8 @@ public class PlayerMovement : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && IsGrounded()) 
         {
            _rb.velocity = new Vector2(_rb.velocity.x, jumpSpeed);
-
         }
-
     }
-
 
     private bool IsGrounded()
     {
@@ -120,9 +103,5 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D hitRight = Physics2D.Raycast(new Vector2(bounds.max.x, bounds.min.y), Vector2.down, 0.1f, platformMask); 
 
         return (hitLeft || hitRight); //short-circuited "or"
-
-
     }
-
-
 }

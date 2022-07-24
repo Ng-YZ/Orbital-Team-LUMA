@@ -5,13 +5,11 @@ using UnityEngine.UI;
 
 public class MusicPlayerScript : MonoBehaviour
 {
+    public Slider volumeSlider;
     public GameObject objectMusic;
     private AudioSource AudioSource;
-
-    public Slider volumeSlider;
-
     private float musicVolume = 1f;
-    // Start is called before the first frame update
+
     void Start()
     {
         objectMusic = GameObject.FindWithTag("Music");
@@ -22,7 +20,6 @@ public class MusicPlayerScript : MonoBehaviour
         volumeSlider.value = musicVolume;
     }
 
-    // Update is called once per frame
     void Update()
     {
         AudioSource.volume = musicVolume;

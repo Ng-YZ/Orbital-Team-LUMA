@@ -7,15 +7,15 @@ public class DialogueTrigger : MonoBehaviour
     private bool playerDetected;
     public Dialogue dialogueScript;
 
-    //detect trigger w player
+    //detect trigger with player
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //enable playerDetected and show indicator
         if(collision.tag == "Player")
-         {
+        {
             playerDetected = true;
             dialogueScript.ToggleIndicator(playerDetected);
-         }
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision) 
@@ -24,10 +24,8 @@ public class DialogueTrigger : MonoBehaviour
         {
             playerDetected = false;
             dialogueScript.ToggleIndicator(playerDetected);
-            dialogueScript.EndDialogue(); //new line added
+            dialogueScript.EndDialogue(); 
         }
-
-       
     }
 
     private void Update()
