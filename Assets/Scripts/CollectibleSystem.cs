@@ -11,6 +11,7 @@ public class CollectibleSystem : MonoBehaviour
 
     void Start() 
     {
+        //PlayerPrefs.DeleteKey("L1Collect");
         Scene scene = SceneManager.GetActiveScene();
         book = GameObject.Find("Collectible_Changi");
         leaf = GameObject.Find("Collectible_GBTB");
