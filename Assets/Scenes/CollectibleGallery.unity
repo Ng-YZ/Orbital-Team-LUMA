@@ -1593,6 +1593,8 @@ GameObject:
   - component: {fileID: 318220632}
   - component: {fileID: 318220631}
   - component: {fileID: 318220634}
+  - component: {fileID: 318220636}
+  - component: {fileID: 318220635}
   m_Layer: 0
   m_Name: GalleryAccess
   m_TagString: GalleryAccess
@@ -1613,9 +1615,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.026639462}
+  m_Offset: {x: 2.6343508, y: -3.17348}
   serializedVersion: 2
-  m_Radius: 0.60680294
+  m_Radius: 1.1372094
 --- !u!212 &318220632
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1657,7 +1659,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 47d9d270483767d44b2ef0a8da994f67, type: 3}
+  m_Sprite: {fileID: -1075729012, guid: d0b49d544bd65154bbe22d45030974e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1676,8 +1678,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318220630}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.82, y: -0.39, z: 0}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 1}
+  m_LocalPosition: {x: 13.49, y: 2.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1697,6 +1699,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionAnim: {fileID: 1791087713}
   sceneName: NationalGallery
+--- !u!95 &318220635
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318220630}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f2c961537b143d4e83a63b571e91d2b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &318220636
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318220630}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: f81cc8ff4fa8e0146bf5b2b8e69a22c3, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &352910063
 GameObject:
   m_ObjectHideFlags: 0
@@ -14139,7 +14176,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.347176, y: 0.14212632, z: -10}
+  m_LocalPosition: {x: -9.340648, y: 0.14223933, z: -10}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18720,7 +18757,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.777528, y: 1}
+    m_SensorSize: {x: 1.7786163, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19069,6 +19106,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 302220966668754305, guid: e6b2aac38b3862d4daad1a0c940324e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 963395343312807522, guid: e6b2aac38b3862d4daad1a0c940324e1, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1864643607885471745, guid: e6b2aac38b3862d4daad1a0c940324e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3659493328641900377, guid: e6b2aac38b3862d4daad1a0c940324e1, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -24800,8 +24849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18e008cc6b656d94a98148f2d36e5de7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectMusic: {fileID: 0}
   volumeSlider: {fileID: 1890628457}
+  objectMusic: {fileID: 0}
 --- !u!4 &1927476401
 Transform:
   m_ObjectHideFlags: 0
@@ -25211,6 +25260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  highscore: 0
   scoreText: {fileID: 67334576}
 --- !u!114 &2049864494
 MonoBehaviour:

@@ -19,10 +19,10 @@ public class SceneTransitions : MonoBehaviour
             {
                 Time.timeScale = 0f;
                 Timer.StopTimer();
-                // Debug.Log("Record L1 : " + PlayerPrefs.GetFloat("Timing L1"));
-                // Debug.Log("Record L2 : " + PlayerPrefs.GetFloat("Timing L2"));
-                // Debug.Log("Record L3 : " + PlayerPrefs.GetFloat("Timing L3"));
-                // Debug.Log("Record L4 : " + PlayerPrefs.GetFloat("Timing L4"));
+                Debug.Log("Record L1 : " + PlayerPrefs.GetFloat("Timing L1"));
+                Debug.Log("Record L2 : " + PlayerPrefs.GetFloat("Timing L2"));
+                Debug.Log("Record L3 : " + PlayerPrefs.GetFloat("Timing L3"));
+                Debug.Log("Record L4 : " + PlayerPrefs.GetFloat("Timing L4"));
                 Time.timeScale = 1f;
             }
         }
