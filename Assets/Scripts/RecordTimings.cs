@@ -11,10 +11,10 @@ public class RecordTimings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //PlayerPrefs.DeleteKey("Timing L4");
-        //PlayerPrefs.DeleteKey("Timing L2");
-        //PlayerPrefs.DeleteKey("Timing L3");
-        //PlayerPrefs.DeleteKey("Timing L1");
+    //     PlayerPrefs.DeleteKey("Timing L4");
+    //     PlayerPrefs.DeleteKey("Timing L2");
+    //     PlayerPrefs.DeleteKey("Timing L3");
+    //     PlayerPrefs.DeleteKey("Timing L1");
         L1time = PlayerPrefs.GetFloat("Timing L1");
         L2time = PlayerPrefs.GetFloat("Timing L2");
         L3time = PlayerPrefs.GetFloat("Timing L3");
