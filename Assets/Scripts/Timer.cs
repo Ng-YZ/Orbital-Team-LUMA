@@ -68,13 +68,13 @@ public class Timer : MonoBehaviour
         if (GameObject.Find("ChangiName") == true && ((Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L1")) || (PlayerPrefs.GetFloat("Timing L1") == 0))) 
         {
             PlayerPrefs.SetFloat("Timing L1", Time.timeSinceLevelLoad);    
-        } else if (GameObject.Find("GBTBName") == true && ((Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L2")) || (PlayerPrefs.GetFloat("Timing L1") == 0)))
+        } else if (GameObject.Find("GBTBName") == true && ((Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L2")) || (PlayerPrefs.GetFloat("Timing L2") == 0)))
         {
             PlayerPrefs.SetFloat("Timing L2", Time.timeSinceLevelLoad);
-        } else if (GameObject.Find("SentosaName") == true && ((Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L3")) || (PlayerPrefs.GetFloat("Timing L1") == 0)))
+        } else if (GameObject.Find("SentosaName") == true && ((Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L3")) || (PlayerPrefs.GetFloat("Timing L3") == 0)))
         {
             PlayerPrefs.SetFloat("Timing L3", Time.timeSinceLevelLoad);
-        } else if (GameObject.Find("HeritageName") == true && ((Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L3")) || (PlayerPrefs.GetFloat("Timing L1") == 0)))
+        } else if (GameObject.Find("HeritageName") == true && ((Time.timeSinceLevelLoad < PlayerPrefs.GetFloat("Timing L3")) || (PlayerPrefs.GetFloat("Timing L4") == 0)))
         {
             PlayerPrefs.SetFloat("Timing L4", Time.timeSinceLevelLoad);
         }
