@@ -40,7 +40,6 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(sceneName: "Options");
         Time.timeScale = 1f;
         AudioListener.pause = false;
-        Debug.Log("Loading Menu.");
     }
 
     public void QuitToMenu() {

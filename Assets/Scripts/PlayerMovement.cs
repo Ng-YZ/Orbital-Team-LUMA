@@ -30,8 +30,6 @@ public class PlayerMovement : MonoBehaviour
     /*remove if things go south */
         gravity = (float) -20;
         Physics2D.gravity = new Vector2(0, gravity); 
-        //gravity = (-2 * jumpHeight) / Mathf.Pow(jumpTime, 2);
-        //jumpSpeed = -gravity * jumpTime;
     }
 
     private void Update()
@@ -54,10 +52,10 @@ public class PlayerMovement : MonoBehaviour
     
     private void Move()
     {
-        //this is for movement
+        //movement
         _rb.velocity = new Vector2(xAxis * walkSpeed, _rb.velocity.y); //setting rigid body's velocity
 
-        //this is for animation
+        //animation
         animator.SetFloat("walkingSpeed", Mathf.Abs(xAxis)); //modulus xAxis to prevent negative values from triggering this
                                                             //because the condition in Unity only says "walkingSpeed less than 0.01"
 

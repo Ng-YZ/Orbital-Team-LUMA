@@ -13,9 +13,7 @@ public class FallingPlatform : MonoBehaviour
         {
             isFalling = true;
             transform.DetachChildren();
-            Debug.Log("Detached");
             Destroy(gameObject, 1.5f);
-            Debug.Log("Destroyed");
         }
         
     }

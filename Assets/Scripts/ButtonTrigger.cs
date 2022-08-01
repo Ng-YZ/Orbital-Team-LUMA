@@ -13,7 +13,7 @@ public class ButtonTrigger : MonoBehaviour
     
     void Start()
     {
-        ButtonPress = GetComponent<Animator>();
+        ButtonPress = GetComponent<Animator>(); //button is pressed
         ButtonPress.SetBool("isContact", false);
     }
 
@@ -26,11 +26,11 @@ public class ButtonTrigger : MonoBehaviour
             
             foreach(GameObject block in Blocks) 
             {
-                block.SetActive(false);
+                block.SetActive(false); //blocks are deactivated
             }
 
-            Sign.SetActive(false);
-            Interactable.SetActive(false);
+            Sign.SetActive(false); //signboard is deactivated
+            Interactable.SetActive(false); //sparkle is deactivated
             
         }
     }

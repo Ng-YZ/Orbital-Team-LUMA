@@ -25,7 +25,7 @@ public class CollectibleSystem : MonoBehaviour
             } else if (PlayerPrefs.GetInt("L1Collect") == 1) { //if item collected in previous gameplay, set item inactive
                 book.SetActive(false);
             } else {
-                Debug.Log("No game object book found");
+                //Debug.Log("No game object book found");
             }
         }
 
@@ -36,7 +36,7 @@ public class CollectibleSystem : MonoBehaviour
             } else if (PlayerPrefs.GetInt("L2Collect") == 1) { 
                 leaf.SetActive(false);
             } else {
-                Debug.Log("No game object leaf found");
+                //Debug.Log("No game object leaf found");
             }
         }
 
@@ -47,7 +47,7 @@ public class CollectibleSystem : MonoBehaviour
             } else if (PlayerPrefs.GetInt("L3Collect") == 1) {
                 gem.SetActive(false);
             } else {
-                Debug.Log("No game object gem found");
+               //Debug.Log("No game object gem found");
             }
         }
 
@@ -58,7 +58,7 @@ public class CollectibleSystem : MonoBehaviour
             } else if (PlayerPrefs.GetInt("L4Collect") == 1) {
                 potion.SetActive(false);
             } else {
-                Debug.Log("No game object potion found");
+                //Debug.Log("No game object potion found");
             }
         }
 
